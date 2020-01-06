@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #clock {
+            background: gray;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        #hour {
+            position:absolute;
+            background: green;
+            width: 50%;
+            height: 5px;
+            top: 50%;
+            transform-origin: right center;
+            transform: rotate(90deg);
+        }
+        #min {
+            position:absolute;
+            background: orange;
+            width: 40%;
+            height: 5px;
+            top: 50%;
+            left: 10%;
+            transform-origin: right center;
+            transform: rotate(180deg);
+        }
+        #sec {
+            position:absolute;
+            background: red;
+            width: 30%;
+            height: 5px;
+            top: 50%;
+            left: 20%;
+            transform-origin: right center;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock">
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
+    </div>
+    <div>
+        <p>現在時間:<span id="time"></span></p>
+    </div>
+    <script>
+        let time = document.getElementById("time");
+        time.innerText = new DATE()
+        let clock = () => {
+            let date = new DATE()
+            
+        }
+        
+    </script>
+</body>
+    
+</html>
